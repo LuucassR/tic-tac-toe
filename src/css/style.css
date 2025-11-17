@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(220, 220, 220);
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 30px;
+    background-color: #6c61ff;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 40px;
+    place-self: center;
+}
+
+button:hover {
+    background-color: #574fd6;
+    cursor: pointer;
+}
+
+.table {
+    margin: 10px;
+    display: grid;
+    gap: 10px;
+    place-self: center;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.square {
+    display: flex;
+    text-align: center;
+    font-size: 80px;
+    align-items: center;
+    cursor: pointer;
+    display: grid;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, .4);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    height: 150px;
+    width: 150px;
+    justify-self: center;
+}
+
+.winner div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+
+}
+
+.xWon {
+    background-color: lightgreen;
+    opacity: 0;
+}
+
+.oWon {
+    background-color: lightgreen;
+    opacity: 0;
+}
